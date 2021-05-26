@@ -13,6 +13,95 @@
   </head>
 
   <body>
-    <main></main>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Shipping Information</legend>
+          <div>
+            <label for="name">Full Name:</label>
+            <input id="name" type="text" name="name"
+              placeholder="Enter your full name"
+            />
+          </div>
+          <div>
+            <label for="location">Zipcode:</label>
+            <input
+              id="location"
+              type="text"
+              name="zipcode"
+              autofocus="on"
+              maxlength="5"
+              required
+            />
+          </div>
+        </fieldset>
+        <div>
+          <label for="form-message">Your message:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            placeholder="How can I help you?"
+          ></textarea>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" minlength="8" />
+        </div>
+        <div>
+          <h2>Favorite Color:</h2>
+          <div>
+            <label for="red">Red</label>
+            <input id="red" name="color" type="radio" value="red" />
+          </div>
+          <div>
+            <label for="blue">Blue</label>
+            <input id="blue" name="color" type="radio" value="blue" />
+          </div>
+          <div>
+            <label for="white">White</label>
+            <input id="white" name="color" type="radio" value="white" />
+          </div>
+        </div>
+        <div>
+          <h2>Choose your monster's features:</h2>
+          <div>
+            <label for="scales">Scales</label>
+            <input name="scales" type="checkbox" id="scales" />
+          </div>
+          <div>
+            <label for="horns">Horns</label>
+            <input name="horns" type="checkbox" id="horns" />
+          </div>
+          <div>
+            <label for="wings">Wings</label>
+            <input name="wings" type="checkbox" id="wings" />
+          </div>
+        </div>
+        <div>
+          <h2>Choose a font:</h2>
+          <select name="fonts" size="1">
+            <option value="arial">Arial</option>
+            <option value="times">Times New Roman</option>
+            <option value="comicsans">Comic Sans</option>
+            <option value="papyrus">Papyrus</option>
+          </select>
+        </div>
+        <div>
+          <label for="phone">Phone #:</label>
+          <input
+            id="phone"
+            type="text"
+            name="phone"
+            pattern="\d{3}[\-]\d{3}[\-]d{4}"
+            placeholder="xxx-xxx-xxxx"
+          />
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
   </body>
 </html>
